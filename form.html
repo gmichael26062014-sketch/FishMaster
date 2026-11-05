@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення товарів | FishMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">FishMaster</div>
+
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="products.html">Товари</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="form.html">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Замовлення товарів</h1>
+
+        <p>
+            Обирай необхідне спорядження для риболовлі
+            та заповнюй форму для оформлення замовлення!
+        </p>
+
+        <form class="booking-form">
+
+            <label for="name">Ваше ім’я</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Введіть ваше ім’я"
+                required
+            >
+
+            <label for="phone">Номер телефону</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+380 XX XXX XX XX"
+                required
+            >
+
+            <label for="product">Оберіть товар</label>
+            <select id="product" name="product" required>
+
+                <option value="">Оберіть товар</option>
+
+                <optgroup label="Вудки та спінінги">
+                    <option value="Телескопічна вудка">Телескопічна вудка від 450 грн</option>
+                    <option value="Спінінг для хижої риби">Спінінг для хижої риби від 850 грн</option>
+                    <option value="Фідерне вудилище">Фідерне вудилище від 720 грн</option>
+                    <option value="Карпові вудлища">Карпові вудлища від 1000 грн</option>
+                </optgroup>
+
+                <optgroup label="Котушки">
+                    <option value="Безінерційна котушка">Безінерційна котушка від 550 грн</option>
+                    <option value="Коропові катушки">Коропові катушки від 750 грн</option>
+                    <option value="Фідерні катушки">Фідерні катушки від 669 грн</option>
+                </optgroup>
+
+                <optgroup label="Волосінь та шнур">
+                    <option value="Рибальська волосінь">Рибальська волосінь від 120 грн</option>
+                    <option value="Плетений шнур 4x">Плетений шнур 4x від 280 грн</option>
+                    <option value="Плетений шнур 8x">Плетений шнур 8x від 480 грн</option>
+                </optgroup>
+
+                <optgroup label="Приманки та наживки">
+                    <option value="Набір силіконових приманок">Набір силіконових приманок від 150 грн</option>
+                    <option value="Коливальні блешні">Коливальні блешні від 90 грн</option>
+                    <option value="Воблер для спінінга">Воблер для спінінга від 180 грн</option>
+                    <option value="Пількер">Пількер від 200 грн</option>
+                    <option value="Овсетні гачки">Овсетні гачки від 50 грн</option>
+                </optgroup>
+
+                <optgroup label="Аксесуари для риболовлі">
+                    <option value="Рибальський садок">Рибальський садок від 200 грн</option>
+                    <option value="Коробка для снастей">Коробка для снастей від 250 грн</option>
+                    <option value="Складаний стілець">Складаний стілець від 600 грн</option>
+                    <option value="Рюкзак">Рюкзак від 950 грн</option>
+                </optgroup>
+
+            </select>
+
+            <label for="quantity">Кількість товару</label>
+            <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="100"
+                value="1"
+                required
+            >
+
+            <label for="address">Адреса доставки</label>
+            <input
+                type="text"
+                
+placeholder="Місто, вулиця, номер будинку"
+                required
+            >
+
+            <label for="delivery">Спосіб доставки</label>
+            <select id="delivery" name="delivery" required>
+                <option value="">Оберіть спосіб доставки</option>
+                <option value="Нова пошта">Нова пошта</option>
+                <option value="Укрпошта">Укрпошта</option>
+                <option value="Самовивіз">Самовивіз</option>
+            </select>
+
+            <label for="comment">Коментар до замовлення</label>
+            <textarea
+                id="comment"
+                name="comment"
+                placeholder="Додаткові побажання (необов’язково)"
+                rows="4"
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Оформити замовлення
+            </button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 FishMaster</p>
+    </footer>
+
+</body>
+
+</html>
